@@ -125,8 +125,9 @@ h2{
 
 .social-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin-top: 20px;
 }
 
@@ -216,3 +217,64 @@ footer a:hover {
         font-size: 0.9rem;
     }
 }  */
+  /* Medium Screens (991px and below) */
+@media (max-width: 991px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container .contactInfo,
+    .contactForm {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+/* Small Screens (768px and below) */
+@media (max-width: 768px) {
+    .contact .content h2 {
+        font-size: 28px;
+    }
+
+    .contactForm h2 {
+        font-size: 24px;
+    }
+}
+
+/* Extra Small Screens (576px and below) */
+@media (max-width: 576px) {
+    .contactForm .inputBox input,
+    .contactForm .inputBox textarea {
+        font-size: 14px;
+        line-height: 1.4;
+        padding: 10px;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Very Small Screens (375px and below, e.g., iPhone SE) */
+@media (max-width: 375px) {
+    .contact .content h2,
+    .contactForm h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
