@@ -260,18 +260,20 @@ iframe {
 
     /* Mobile Responsiveness */
     @media (max-width: 768px) {
-      .card-img-top {
-        height: 150px;
-      }
-    }
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  iframe {
-    width: 100%;
-    height: auto;
-  }
+   .card-img-top {
+     height: auto;
+     max-height: 300px;
+     width: 100%;
+   }
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
 
     /* Row Animations */
     .row {
